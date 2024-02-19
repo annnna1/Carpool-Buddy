@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/vehiclesList"
+        android:layout_width="392dp"
+        android:layout_height="386dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentVehiclesText"
+        tools:listitem="@layout/vehicle_list_item" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="368dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Welcome back, my beautiful princess with a passion for sustainability."
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentVehiclesText"
+        android:layout_width="360dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="188dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"
+        android:text="Your current vehicles:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <view
+        android:id="@+id/view4"
+        class="androidx.appcompat.widget.AppCompatImageView"
+        android:layout_width="376dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="84dp"
+        android:background="#88000000"
+        android:backgroundTint="#73D151"
+        android:backgroundTintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="122dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#94CD7B"
+        android:backgroundTintMode="add"
+        android:onClick="onLogOut"
+        android:text="Log out"
+        android:textColorHighlight="#94CD7B"
+        android:textColorLink="#94CD7B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#A0DA86" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="449dp"
+        android:layout_height="80dp"
+        android:background="#A38BC34A"
+        android:backgroundTint="#73D151"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addVehicleMainButton"
+        android:layout_width="126dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#61FFFFFF"
+        android:onClick="onAddVehicle"
+        android:text="Add vehicle"
+        android:textColor="#009602"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <Button
+        android:id="@+id/ridesButton"
+        android:layout_width="129dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#61FFFFFF"
+        android:onClick="onRides"
+        android:text="Rides"
+        android:textColor="#009621"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/profileButton"
+        app:layout_constraintStart_toEndOf="@+id/addVehicleMainButton"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="127dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#61FFFFFF"
+        android:onClick="onProfile"
+        android:text="Profile"
+        android:textColor="#009626"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="93dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cis_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

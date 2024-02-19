@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Carpool Buddy</string>
+    <string-array name="userType">
+        <item> Student </item>
+        <item> Teacher </item>
+        <item> Parent </item>
+        <item> Alumni </item>
+    </string-array>
+    <string-array name="vehicleType">
+        <item> Car </item>
+        <item> Electric car </item>
+        <item> Bicycle </item>
+        <item> Helicopter </item>
+        <item> Segway </item>
+    </string-array>
+    <string-array name="filter_options">
+        <item> Filter: Any open seats </item>
+        <item> 2+ open seats </item>
+        <item> 3+ open seats </item>
+        <item> 4+ open seats </item>
+    </string-array>
+</resources>
